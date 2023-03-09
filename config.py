@@ -1,5 +1,5 @@
 Model_type = 'conv_trans'#'conv_trans'       ######################
-app = 'nosh_1h1l_allf'#'sh_1h1l_allf'# nosh_allf
+app = 'sh_1h1l_allf'#'sh_1h1l_allf'# nosh_allf
 epoch = 30
 input_length = 320 * 128
 
