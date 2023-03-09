@@ -12,7 +12,7 @@ mu = 1e-4
 NO = 31
 NI = 31
 NE = 31
-app = '_fxlms_washing1e4'
+app = '_fxlms'
 
 envs = '_reverb'
 xv = np.linspace(0.1, 5.9, 100)
@@ -132,7 +132,7 @@ def test(index = ''):
 
     F_pri_rirs_ins = np.load('../F_pri_rirs_ins'+envs+'.npy')[:, inside_pos, :]
     F_pri_rirs_ins = torch.from_numpy(F_pri_rirs_ins).type(torch.complex64).to(device) #[F, NE, NO]
-    F_sec_rirs_ins = np.load('../F_sc_rirs'+envs+'.npy')[:, inside_pos, :]
+    F_sec_rirs_ins = np.load('../F_sec_rirs_ins'+envs+'.npy')[:, inside_pos, :]
     F_sec_rirs_ins = torch.from_numpy(F_sec_rirs_ins).type(torch.complex64).to(device) #[F, NE, NO]
     # F_pri_rirs = np.load('../F_pri_rirs'+envs+'.npy')
     # F_pri_rirs = torch.from_numpy(F_pri_rirs).type(torch.complex64).to(device) #[F, NE, NO]
