@@ -7,7 +7,6 @@ from torch.utils.data import Dataset
 import torch
 import matplotlib.pyplot as plt
 import librosa
-from scipy import signal
 
 params = get_parameter()
 
