@@ -262,7 +262,7 @@ def test():
 
     F_pri_rirs_ins = np.load('../F_pri_rirs_ins'+envs+'.npy')[:, inside_pos, :]
     F_pri_rirs_ins = torch.from_numpy(F_pri_rirs_ins).type(torch.complex64).to(device) #[F, NE, NO]
-    F_sec_rirs_ins = np.load('../F_sc_rirs'+envs+'.npy')[:, inside_pos, :]
+    F_sec_rirs_ins = np.load('../F_sec_rirs_ins'+envs+'.npy')[:, inside_pos, :]
     F_sec_rirs_ins = torch.from_numpy(F_sec_rirs_ins).type(torch.complex64).to(device) #[F, NE, NO]
     # F_pri_rirs = np.load('../F_pri_rirs'+envs+'.npy')
     # F_pri_rirs = torch.from_numpy(F_pri_rirs).type(torch.complex64).to(device) #[F, NE, NO]
