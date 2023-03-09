@@ -54,4 +54,4 @@ for s, sp in enumerate(source_pos_list):
         # index = np.sqrt(np.sum((xs - mp[:2]) ** 2, axis = -1)) / 343 * 16000 < n_fft
         # rir = generate_rir_from_sources(xs[index], source_strength[index], np.array(mp[:2]))
         rir = generate_rir_from_sources(xs, source_strength, np.array(mp[:2]))
-        np.save('../rir_2d_nosel_M15/rir_'+str(s) + '_' + str(m) +'.npy', rir)
+        np.save('./rir_2d_nosel_M15/rir_'+str(s) + '_' + str(m) +'.npy', rir)
